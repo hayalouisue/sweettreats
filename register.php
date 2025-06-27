@@ -84,7 +84,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     file_put_contents("user.txt", $line, FILE_APPEND);
-    echo "<script>window.alert('You are successfully registered)</script>";
     header("Location: login.php?registered=1");
     exit;
   }
