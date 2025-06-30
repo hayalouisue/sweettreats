@@ -93,7 +93,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic1.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummies</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="1gummies.html">Gummies</a></h4>
               <p class="cars-text">₱25.00<br>A chewy, fruity treat that’s fun to eat and perfect for sharing.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -104,7 +104,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic2.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Chocolate Bar</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="2chocolatebar.html">Chocolate Bar</a></h4>
               <p class="cars-text">₱40.00<br>Smooth and rich chocolate that melts in your mouth with every bite.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -115,7 +115,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic3.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Lollipop</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="3lollipop.html">Lollipop</a></h4>
               <p class="cars-text">₱10.00<br>Colorful and sweet hard candy on a stick that lasts and lasts.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -126,7 +126,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic4.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Marshmallow</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="4marshmallow.html">Marshmallow</a></h4>
               <p class="cars-text">₱20.00<br>Soft, fluffy treats that are perfect for snacking or toasting.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -137,7 +137,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic5.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Teeth</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="5gummyteeth.html">Gummy Teeth</a></h4>
               <p class="cars-text">₱30.00<br>Playful, chewy candy shaped like little teeth with a fruity punch.
 
 </p>
@@ -150,7 +150,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic6.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Corn</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="6gummycorn.html">Gummy Corn</a></h4>
               <p class="cars-text">₱30.00<br>Sweet and chewy candy shaped like corn kernels, fun and tasty.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -160,7 +160,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic7.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Worms</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="7gummyworms.html">Gummy Worms</a></h4>
               <p class="cars-text">₱25.00<br>Wiggly, colorful worms bursting with tangy-sweet flavor.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -170,7 +170,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic8.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Flowers</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="8gummyflowers.html">Gummy Flowers</a></h4>
               <p class="cars-text">₱30.00<br>Pretty floral-shaped gummies with a garden of fruity flavors.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -180,7 +180,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic9.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Hearts</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="9gummyhearts.html">Gummy Hearts</a></h4>
               <p class="cars-text">₱30.00<br>Heart-shaped treats filled with love and sweet, fruity taste.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -190,7 +190,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic10.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Choco</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="10choco.html">Choco</a></h4>
               <p class="cars-text">₱35.00<br>A bite-sized chocolate delight that satisfies your sweet tooth.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -200,7 +200,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic11.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Gummy Cola</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="11gummycola.html">Gummy Cola</a></h4>
               <p class="cars-text">₱25.00<br>Fizzy, cola-flavored gummies that taste just like your favorite drink.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -210,7 +210,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic12.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Chocolate-Covered Almonds</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="12chocoal.html">Chocolate-Covered Almonds</a></h4>
               <p class="cars-text">₱50.00<br>Crunchy almonds coated in rich, velvety chocolate.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -220,7 +220,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic13.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Rock Candy</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="13rockcandy.html">Rock Candy</a></h4>
               <p class="cars-text">₱15.00<br>Crystal-like sugar sticks that shimmer and crunch with sweetness.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -230,7 +230,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic14.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Candy Rings</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="14candyrings.html">Candy Rings</a></h4>
               <p class="cars-text">₱10.00<br>Wearable candy that’s sweet, fruity, and fun to eat.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -240,7 +240,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic15.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Jelly Beans</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="15jellybeans.html">Jelly Beans</a></h4>
               <p class="cars-text">₱25.00<br>Tiny bean-shaped candies with a surprise of flavors in every bite.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -250,7 +250,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic16.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Chocolate-Covered Pretzels</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="16chocopret.html">Chocolate-Covered Pretzels</a></h4>
               <p class="cars-text">₱45.00<br>A perfect mix of salty crunch and smooth chocolate coating.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -260,7 +260,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic17.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Sour Belts</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="17sourbelts.html">Sour Belts</a></h4>
               <p class="cars-text">₱30.00<br>Tangy, colorful candy strips packed with a punch of sour flavor.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -270,7 +270,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic18.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Toffee Bites</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="18toffeebites.html">Toffee Bites</a></h4>
               <p class="cars-text">₱35.00<br>Buttery, crunchy toffee candy that’s hard to resist.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -280,7 +280,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic19.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Candy Buttons</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="19candybuttons.html">Candy Buttons</a></h4>
               <p class="cars-text">₱15.00<br>Cute little sugar dots on paper strips, full of colorful charm.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
@@ -290,7 +290,7 @@ session_start();
           <article class="card shadow">
             <img class="rounded card-img-top" src="pics/pic20.png" alt="post-thumb">
             <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="#">Bubblegum Balls</a></h4>
+              <h4 class="card-title"><a class="text-dark" href="20bubblegum.html">Bubblegum Balls</a></h4>
               <p class="cars-text">₱5.00<br>Round, chewy gum balls bursting with classic bubble-blowing fun.</p>
               <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
             </div>
