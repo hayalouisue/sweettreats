@@ -920,3 +920,9 @@ blockquote {
 .filter-controls li.active {
   font-weight: bold;
 }
+
+.custom-img {
+  width: 120%;
+  max-width: 120%;
+}
+
