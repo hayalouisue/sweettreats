@@ -56,7 +56,7 @@ session_start();
               <a class="nav-link" href="products.php">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cart</a>
+              <a class="nav-link" href="cart.php">Cart</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="logout.php">Log-out</a>
@@ -67,238 +67,65 @@ session_start();
     </header>
 
     <!-- page title -->
-  <section class="page-title-alt bg-primary position-relative">
+  <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1 class="text-white font-tertiary">What We Offer</h1>
+
+<!-- PRODUCT TEMPLATE START -->
+<?php
+$products = [
+  ["Gummies", 25, "pic1.png", "1gummies.html", "A chewy, fruity treat that’s fun to eat and perfect for sharing."],
+  ["Chocolate Bar", 40, "pic2.png", "2chocolatebar.html", "Smooth and rich chocolate that melts in your mouth with every bite."],
+  ["Lollipop", 10, "pic3.png", "3lollipop.html", "Colorful and sweet hard candy on a stick that lasts and lasts."],
+  ["Marshmallow", 20, "pic4.png", "4marshmallow.html", "Soft, fluffy treats that are perfect for snacking or toasting."],
+  ["Gummy Teeth", 30, "pic5.png", "5gummyteeth.html", "Playful, chewy candy shaped like little teeth with a fruity punch."],
+  ["Gummy Corn", 30, "pic6.png", "6gummycorn.html", "Sweet and chewy candy shaped like corn kernels, fun and tasty."],
+  ["Gummy Worms", 25, "pic7.png", "7gummyworms.html", "Wiggly, colorful worms bursting with tangy-sweet flavor."],
+  ["Gummy Flowers", 30, "pic8.png", "8gummyflowers.html", "Pretty floral-shaped gummies with a garden of fruity flavors."],
+  ["Gummy Hearts", 30, "pic9.png", "9gummyhearts.html", "Heart-shaped treats filled with love and sweet, fruity taste."],
+  ["Choco", 35, "pic10.png", "10choco.html", "A bite-sized chocolate delight that satisfies your sweet tooth."],
+  ["Gummy Cola", 25, "pic11.png", "11gummycola.html", "Fizzy, cola-flavored gummies that taste just like your favorite drink."],
+  ["Chocolate-Covered Almonds", 50, "pic12.png", "12chocoal.html", "Crunchy almonds coated in rich, velvety chocolate."],
+  ["Rock Candy", 15, "pic13.png", "13rockcandy.html", "Crystal-like sugar sticks that shimmer and crunch with sweetness."],
+  ["Candy Rings", 10, "pic14.png", "14candyrings.html", "Wearable candy that’s sweet, fruity, and fun to eat."],
+  ["Jelly Beans", 25, "pic15.png", "15jellybeans.html", "Tiny bean-shaped candies with a surprise of flavors in every bite."],
+  ["Chocolate-Covered Pretzels", 45, "pic16.png", "16chocopret.html", "A perfect mix of salty crunch and smooth chocolate coating."],
+  ["Sour Belts", 30, "pic17.png", "17sourbelts.html", "Tangy, colorful candy strips packed with a punch of sour flavor."],
+  ["Toffee Bites", 35, "pic18.png", "18toffeebites.html", "Buttery, crunchy toffee candy that’s hard to resist."],
+  ["Candy Buttons", 15, "pic19.png", "19candybuttons.html", "Cute little sugar dots on paper strips, full of colorful charm."],
+  ["Bubblegum Balls", 5, "pic20.png", "20bubblegum.html", "Round, chewy gum balls bursting with classic bubble-blowing fun."]
+];
+
+foreach ($products as $index => $product) {
+  list($name, $price, $image, $link, $desc) = $product;
+  $id = strtolower(str_replace(" ", "_", $name));
+  echo <<<HTML
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="pics/{$image}" alt="{$name}">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="{$link}">{$name}</a></h4>
+        <p class="cars-text">₱{$price}.00<br>{$desc}</p>
+        <form method="post" action="cart.php" class="d-flex flex-column align-items-center">
+          <input type="hidden" name="product_name" value="{$name}">
+          <input type="hidden" name="product_price" value="{$price}">
+          <div class="mb-2">
+            <input type="number" name="product_quantity" min="1" value="1" class="form-control form-control-sm" style="width: 70px;" required>
+          </div>
+          <button type="submit" name="add_to_cart" class="btn btn-xs btn-primary">Add to cart</button>
+        </form>
       </div>
-    </div>
+    </article>
   </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6">
-</section>
-<!-- /page title -->
+  HTML;
+}
+?>
+<!-- PRODUCT TEMPLATE END -->
 
-<!-- about -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic1.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="1gummies.html">Gummies</a></h4>
-              <p class="cars-text">₱25.00<br>A chewy, fruity treat that’s fun to eat and perfect for sharing.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic2.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="2chocolatebar.html">Chocolate Bar</a></h4>
-              <p class="cars-text">₱40.00<br>Smooth and rich chocolate that melts in your mouth with every bite.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic3.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="3lollipop.html">Lollipop</a></h4>
-              <p class="cars-text">₱10.00<br>Colorful and sweet hard candy on a stick that lasts and lasts.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-    
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic4.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="4marshmallow.html">Marshmallow</a></h4>
-              <p class="cars-text">₱20.00<br>Soft, fluffy treats that are perfect for snacking or toasting.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-      
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic5.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="5gummyteeth.html">Gummy Teeth</a></h4>
-              <p class="cars-text">₱30.00<br>Playful, chewy candy shaped like little teeth with a fruity punch.
-
-</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-       
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic6.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="6gummycorn.html">Gummy Corn</a></h4>
-              <p class="cars-text">₱30.00<br>Sweet and chewy candy shaped like corn kernels, fun and tasty.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic7.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="7gummyworms.html">Gummy Worms</a></h4>
-              <p class="cars-text">₱25.00<br>Wiggly, colorful worms bursting with tangy-sweet flavor.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic8.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="8gummyflowers.html">Gummy Flowers</a></h4>
-              <p class="cars-text">₱30.00<br>Pretty floral-shaped gummies with a garden of fruity flavors.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic9.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="9gummyhearts.html">Gummy Hearts</a></h4>
-              <p class="cars-text">₱30.00<br>Heart-shaped treats filled with love and sweet, fruity taste.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic10.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="10choco.html">Choco</a></h4>
-              <p class="cars-text">₱35.00<br>A bite-sized chocolate delight that satisfies your sweet tooth.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic11.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="11gummycola.html">Gummy Cola</a></h4>
-              <p class="cars-text">₱25.00<br>Fizzy, cola-flavored gummies that taste just like your favorite drink.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic12.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="12chocoal.html">Chocolate-Covered Almonds</a></h4>
-              <p class="cars-text">₱50.00<br>Crunchy almonds coated in rich, velvety chocolate.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic13.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="13rockcandy.html">Rock Candy</a></h4>
-              <p class="cars-text">₱15.00<br>Crystal-like sugar sticks that shimmer and crunch with sweetness.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic14.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="14candyrings.html">Candy Rings</a></h4>
-              <p class="cars-text">₱10.00<br>Wearable candy that’s sweet, fruity, and fun to eat.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic15.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="15jellybeans.html">Jelly Beans</a></h4>
-              <p class="cars-text">₱25.00<br>Tiny bean-shaped candies with a surprise of flavors in every bite.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic16.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="16chocopret.html">Chocolate-Covered Pretzels</a></h4>
-              <p class="cars-text">₱45.00<br>A perfect mix of salty crunch and smooth chocolate coating.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic17.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="17sourbelts.html">Sour Belts</a></h4>
-              <p class="cars-text">₱30.00<br>Tangy, colorful candy strips packed with a punch of sour flavor.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic18.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="18toffeebites.html">Toffee Bites</a></h4>
-              <p class="cars-text">₱35.00<br>Buttery, crunchy toffee candy that’s hard to resist.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic19.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="19candybuttons.html">Candy Buttons</a></h4>
-              <p class="cars-text">₱15.00<br>Cute little sugar dots on paper strips, full of colorful charm.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="pics/pic20.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="20bubblegum.html">Bubblegum Balls</a></h4>
-              <p class="cars-text">₱5.00<br>Round, chewy gum balls bursting with classic bubble-blowing fun.</p>
-              <a href="blog-single.html" class="btn btn-xs btn-primary">Add to cart</a>
-            </div>
-          </article>
-        </div>
     </div>
   </div>
 </section>
+
 <!-- /blog -->
 
 
